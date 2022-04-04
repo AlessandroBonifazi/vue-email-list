@@ -22,7 +22,13 @@
 </head>
 
 <body>
-
+    <div id="root">
+        <h1>Email list</h1>
+        <ul v-if="emails.length===10">
+            <li v-for="email in emails">{{email}}</li>
+        </ul>
+        <div v-else=>Loading...</div>
+    </div>
 </body>
 
 </html>
